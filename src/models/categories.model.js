@@ -1,6 +1,7 @@
-import { DataType, DataTypes } from 'sequelize'
+import {  DataTypes } from 'sequelize'
 import db from '../utils/database.js'
 
+//Modelo de tabla para Category
 const Category = db.define(
   'categories',
   {
@@ -12,6 +13,7 @@ const Category = db.define(
       type: DataTypes.STRING(50),
       allowNull: false,
     },
+
   }
 )
 
